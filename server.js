@@ -8,7 +8,8 @@ const PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // Connect to MongoDB
-mongodb.MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }, (error, client) => {
+mongodb.MongoClient.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/mydb?retryWrites=true&w=majority', ...
+ { useNewUrlParser: true }, (error, client) => {
   if (error) {
     console.error('MongoDB connection error:', error);
     process.exit(1);
