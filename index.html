@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blockchain Voting Registration</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 16px;
+        width: 300px;
+      }
+
+      label {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register to Vote</h1>
+      <form action="http://localhost:3000/submit-form" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required />
+
+        <label for="department">Department:</label>
+        <input type="text" name="department" required />
+
+        <label for="addr">Public Address:</label>
+        <input type="text" name="addr" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

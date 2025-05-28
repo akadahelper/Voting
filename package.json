@@ -1,0 +1,16 @@
+{
+  "name": "blockchain-voting-project",
+  "version": "1.0.0",
+  "description": "A blockchain-based e-voting system using Node.js, MongoDB, and Solidity.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
+  }
+}
